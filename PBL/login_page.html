@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            login page
+        </title>
+        <style>
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+            }
+            .login_box{
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 10px;
+                border-color: #3D704C;
+                height: 700px;
+                width: 600px;
+                margin: auto;
+                margin-top: 40px;
+            }
+
+            .login_text{
+                text-align: center;
+                font-size: 40px;
+                color: #3D704C;
+                margin-bottom: 100px;
+            }
+
+            .login_credentials{
+                margin-top: 40px;
+                margin-left: 30px;
+                font-size: 18px;
+            }
+
+            .inputs{
+                width: 500px;
+                font-size: 16px;
+                font-weight: normal;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 25px;
+                border-style: solid;
+            }
+
+            .login_button_center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login_botton{
+                margin-top: 100px;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-style: solid;
+                border-width: 0;
+                border-radius: 25px;
+                color: white;
+                background-color: #3D704C;
+                cursor: pointer;
+            }
+            .login_botton:active{
+                background-color: white;
+                color: #3D704C;
+                border-width: 1px;
+                margin-bottom: 29px;
+            }
+
+            .bottom_lines{
+                text-align: center;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login_box">
+            <div>
+                <p class="login_text">
+                    Login
+                </p>
+            </div>
+            <div class="login_credentials">
+                <p>
+                    User name or email
+                </p>
+                <input class="inputs" type="text" placeholder="tejas1709@gmail.com">
+            </div>
+            <div class="login_credentials">
+                <p>
+                    Password
+                </p>
+                <input class="inputs" type="password">
+            </div>
+            <div class="login_button_center">
+                <button class="login_botton">
+                    Login
+                </button>
+            </div>
+            <div>
+                <p class="bottom_lines">
+                    Forget password
+                </p>
+                <p class="bottom_lines">
+                    Sign up
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

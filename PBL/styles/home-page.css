@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto, Arial;
+}
+
+body{
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #3D704C;
+    color: white;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.Urbanlink_logo{
+    display: inline-block;
+    font-size: 35px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    background-color: #3D704C;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.login_button,
+.sign_up_button{
+    background-color: #3D704C;
+    color: white;
+    align-items: end;
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.sign_up_button{
+    margin-left: 10px;
+}
+.login_button:hover,
+.sign_up_button:hover{
+    background-color: #559b6a;
+}
+
+.ride_info{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.get_ride,
+.book_now_para{
+    margin-top: 180px;
+    margin-bottom: 100px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.book_now_para{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.from,
+.to,
+.book_button,
+.schedule_button{
+    margin-top: 20px;
+    background-color: #E7E9DF;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px; padding-right: 28px;
+    font-size: 24px;
+    width: 400px;
+    border-style: none;
+    border-radius: 30px;
+}
+.to{
+    margin-top: 15px;
+}
+
+.book_button,
+.schedule_button{
+    width: 221px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    background-color: #3D704C;
+    color: white;
+    cursor: pointer;
+}
+.schedule_button{
+    margin-left: 6px;
+}
+
+.book_button:active,
+.schedule_button:active{
+    opacity: 0.8;
+}
+
+.ride_img_div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 55px;
+}
+
+.ride_img{
+    display: inline-block;
+    height: 600px;
+    margin-right: 90px;
+    margin-left: 120px;
+}

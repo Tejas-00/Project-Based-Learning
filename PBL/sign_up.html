@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+            }
+            .signup_box{
+                margin: auto;
+                margin-top: 40px;
+                width: 600px;
+                height: 700px;
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 10px;
+                color: #3D704C;;
+            }
+
+            .signup_text{
+                text-align: center;
+                font-size: 40px;
+                color: #3D704C;
+                margin-bottom: 70px;
+            }
+
+            .credentials{
+                color: black;
+                font-size: 18px;
+                margin-left: 30px;
+                margin-top: 40px;
+            }
+
+            .user_input{
+                margin-left: 30px;
+                margin-right: 30px;
+                width: 510px;
+                padding: 5px;
+                font-size: 16px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 25px;
+                border-style: solid;
+            }
+
+            .center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button{
+                margin-top: 60px;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-style: solid;
+                border-width: 0;
+                border-radius: 25px;
+                color: white;
+                background-color: #3D704C;
+                cursor: pointer;
+            }
+            .button:active{
+                background-color: white;
+                color: #3D704C;
+                border-width: 1px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="signup_box">
+            <div class="signup_text">
+                <p>Sign Up</p>
+            </div>
+            <div>
+                <div class="credentials">
+                    <p>Mobile no.</p>
+                </div>
+                <div>
+                    <input class="user_input" type="number" placeholder="987654321">
+                </div>
+            </div>
+            <div>
+                <div class="credentials">
+                    <p>Email ID</p>
+                </div>
+                <div>
+                    <input class="user_input" type="email" placeholder="tejassonawane1709@gmail.com">
+                </div>
+            </div>
+            <div>
+                <div class="credentials">
+                    <p>User Name</p>
+                </div>
+                <div>
+                    <input class="user_input" type="text" placeholder="tejas321#">
+                </div>
+            </div>
+            <div>
+                <div class="credentials">
+                    <p>Password</p>
+                </div>
+                <div>
+                    <input class="user_input" type="password">
+                </div>
+            </div>
+            <div class="center">
+                <button class="button">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

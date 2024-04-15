@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto, Arial;
+}
+
+body{
+    margin: 0;
+    height: 2000px;
+}
+
+.header {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    height: 64px;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #3D704C;
+    color: white;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.Urbanlink_logo{
+    display: inline-block;
+    font-size: 35px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    background-color: #3D704C;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.driver-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    background-color: black;
+    height: 700px;
+    margin-top: 64px;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.number-of-drivers{
+    font-size: 180px;
+    font-weight: 500;
+    color: white;
+    margin-right: 90px;
+}
+
+.drivers-info{
+    font-size: 40px;
+    margin-right: 140px;
+}
