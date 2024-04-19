@@ -2,9 +2,6 @@
 
 *{
     font-family: Roboto, Arial;
-}
-
-body{
     margin: 0;
 }
 
@@ -26,6 +23,7 @@ body{
 .left-section{
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .hamburger-menu{
@@ -37,7 +35,8 @@ body{
 
 .Urbanlink_logo{
     display: inline-block;
-    font-size: 35px;
+    font-size: 28px;
+    font-weight: 500;
     padding-top: 13px;
     padding-bottom: 7px;
     padding-left: 30px;
@@ -47,96 +46,223 @@ body{
     cursor: pointer;
 }
 
-.login_button,
-.sign_up_button{
+.right-section{
+    display: flex;
+    margin-right: 20px;
+}
+
+.login-button,
+.sign-up-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3D704C;
     color: white;
     align-items: end;
     font-size: 17px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 12px;
-    padding-left: 12px;
+    font-weight: 500;
+    padding: 7px 12px;
     border-style: none;
     border-radius: 30px;
     cursor: pointer;
     margin-left: auto;
     margin-right: 30px;
 }
-.sign_up_button{
-    margin-left: 10px;
-}
-.login_button:hover,
-.sign_up_button:hover{
+.login-button:hover{
     background-color: #559b6a;
 }
 
-.ride_info{
-    display: inline-block;
-    margin-left: 150px;
+.sign-up-button{
+    margin-left: 10px;
+    background-color: white;
+    color: #3D704C;
+}
+.sign-up-button:hover{
+    background-color: rgb(241, 238, 238);
 }
 
-.get_ride,
-.book_now_para{
-    margin-top: 180px;
-    margin-bottom: 100px;
-    font-size: 60px;
+.ride-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 64px;
+    margin: 0px 64px;
+    margin-top: 64px;
+}
+
+@media (max-width: 1140px) {
+    .ride-grid {
+        padding: 64px 0 0 0;
+        grid-template-columns: 1fr;
+    }
+    .detail-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 48px;
+        height: 100%;
+    }
+    .image-section {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 56px 32px;
+    }
+    .footer {
+        margin-top: 64px;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.heading {
+    font-size: 62px; 
     font-weight: 700;
+    text-align: left;
+    line-height: 72px;
+    margin-bottom: 32px;
 }
 
-.book_now_para{
-    font-size: 22px;
+.sub-heading {
     font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(88, 88, 88);
 }
 
-.from,
-.to,
-.book_button,
-.schedule_button{
-    margin-top: 20px;
-    background-color: #E7E9DF;
-    color: black;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 28px; padding-right: 28px;
-    font-size: 24px;
-    width: 400px;
-    border-style: none;
-    border-radius: 30px;
-}
-.to{
-    margin-top: 15px;
+.location-input-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    padding: 0 56px 0 0;
 }
 
-.book_button,
-.schedule_button{
-    width: 221px;
-    margin-top: 30px;
-    margin-bottom: 12px;
+.location-input-container .origin-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 12px;
+    height: 47.2px;
+    width: 396px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(249, 249, 249);
+}
+.location-input-container .origin-container .origin-input {
+    height: 93%;
+    width: 100%;
+    border: none; 
+    margin: 0 12px;
+    font-size: 17px;
+    background-color: rgb(249, 249, 249);
+}
+
+.location-input-container .destination-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0 0 0 12px;
+    height: 47.2px;
+    width: 396px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(249, 249, 249);
+}
+.location-input-container .destination-container .destination-input {
+    height: 93%;
+    width: 100%;
+    margin: 0 12px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(249, 249, 249);
+}
+
+.general-button {
+    padding: 14px 25px;
+    font-size: 17px;
+    font-weight: 500;
     background-color: #3D704C;
     color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.15s;
 }
-.schedule_button{
-    margin-left: 6px;
+.general-button:hover {
+    opacity: 0.9;
 }
-
-.book_button:active,
-.schedule_button:active{
+.general-button:active {
     opacity: 0.8;
 }
 
-.ride_img_div{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 55px;
+.image-section{
+    display: flex;
+    width: auto;
+    height: auto;
 }
 
-.ride_img{
-    display: inline-block;
-    height: 600px;
-    margin-right: 90px;
-    margin-left: 120px;
+.image-section .image {
+    width: 90%;
+    border-radius: 12px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding:0px 64px;
+    height: 700px;
+}
+
+.footer-inner {
+    padding: 64px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    padding: 48px 8px;
+}
+
+.footer-grid .company,
+.footer-grid .products {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.anchor-tag {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.anchor-tag:hover{
+    color: lightgray;
+}
+
+.footer-social-media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 58px 16px;
+    width: 550px;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
 }
