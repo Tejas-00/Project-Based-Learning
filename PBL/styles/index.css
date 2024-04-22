@@ -48,19 +48,37 @@
 
 .right-section{
     display: flex;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
-.profile-pic-container {
+.login-button,
+.sign-up-button{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 38px;
-}
-.profile-pic {
-    width: 100%;
-    border-radius: 21px;
+    align-items: center;
+    background-color: #3D704C;
+    color: white;
+    align-items: end;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 12px;
+    border-style: none;
+    border-radius: 30px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.login-button:hover{
+    background-color: #559b6a;
+}
+
+.sign-up-button{
+    margin-left: 10px;
+    background-color: white;
+    color: #3D704C;
+}
+.sign-up-button:hover{
+    background-color: rgb(241, 238, 238);
 }
 
 .ride-grid{

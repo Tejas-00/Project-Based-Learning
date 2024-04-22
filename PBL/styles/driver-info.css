@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto, Arial;
+    margin: 0;
+}
+
+input {
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background-color: #3D704C;
+}
+
+.outer-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 0px 16px;
+}
+
+.driver-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0px 12px 0px;
+}
+.name-input,
+.mobile-number-input {
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    padding: 0px 14px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+.mobile-number-input {
+    padding: 0px 0px;
+    outline: none;
+}
+
+.name-input:focus {
+    background-color: white;
+}
+.mobile-number-input:focus {
+    border-style: none;
+}
+
+.driver-mob-num {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 190px;
+    outline: auto;
+    padding: 0px 0px 0px 10px;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+
+.continue-button {
+    font-size: 17px;
+    font-weight: 500px;
+    padding: 12px 24px;
+    background-color: #3D704C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.15;
+}
+
+.continue-button:hover {
+    opacity: 0.9;
+}
+.continue-button:active {
+    opacity: 0.8;
+}
