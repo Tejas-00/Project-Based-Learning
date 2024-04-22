@@ -36,29 +36,21 @@
     padding: 0px 16px;
 }
 
-.user-email {
+.user-email,
+.user-password {
     padding: 0px 22px;
     height: 47.2px;
     width: 312px;
     margin-top: 28px;
-    margin-bottom: 16px;
     border: 1px solid lightgray;
     border-radius: 8px;
     font-size: 17px;
     font-weight: 500;
     background-color: rgb(228, 228, 228);
 }
-
-.password {
-    padding: 0px 22px;
-    margin: 2px 0px;
-    height: 47.2px;
-    width: 312px;
-    border: 1px solid lightgray;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: 500;
-    background-color: rgb(228, 228, 228);
+.user-password {
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 .continue-button {
