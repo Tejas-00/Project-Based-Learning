@@ -26,9 +26,26 @@
                     Vehicle detail
                 </h1>
             </div>
-            <div class="company-model-div">
-                <input type="text" class="vehicle-company" placeholder="Enter vehicle company" required>
-                <input type="text" class="vehicle-model" style="margin-top: 0px;" placeholder="Enter vehicle model" required>
+            <div style="margin-top: 48px; color: rgb(63, 63, 63);">
+                enter the details carefully
+            </div>
+            <div  class="input-container">
+                <div class="company-model-div">
+                    <input type="text" class="vehicle-company" placeholder="Company" required>
+                    <input type="text" class="vehicle-model" style="margin: 0px ;" placeholder="Model" required>
+                </div>
+                <div class="license-fuel-div">
+                    <input type="text" class="license-number" placeholder="License number" required>
+                    <select class="fuel-type" name="fuel-type";>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+                </div>
+                <a href="">
+                    <button class="submit-button" type="submit">
+                        Submit
+                    </button>
+                </a>
             </div>
         </div>
     </div>

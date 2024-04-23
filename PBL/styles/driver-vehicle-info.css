@@ -32,21 +32,73 @@
     padding: 0px 16px;
 }
 
-.company-model-div {
+.input-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 48px 16px 0px 16px;
+    align-items: flex-start;
+    margin: 8px 0px 0px 0px;
+}
+
+.company-model-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 8px 0px 0px 0px;
 }
 .company-model-div .vehicle-company,
 .company-model-div .vehicle-model {
     font-size: 16px;
     height: 44px;
     width: 100%;
-    margin: 0px 0px 8px 0px;
+    margin: 0px 8px 8px 0px;
     padding: 0px 14px;
     border-style: none;
     border-radius: 8px;
     background-color: rgb(237, 237, 237);
+}
+
+
+.license-fuel-div {
+    display: flex;
+    flex-direction: column;
+}
+.license-fuel-div .license-number {
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    margin: 0px 8px 8px 0px;
+    padding: 0px 14px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+.license-fuel-div .fuel-type {
+    font-size: 16px;
+    font-weight: 400;
+    height: 44px;
+    width: 100%;
+    margin: 0px 8px 8px 0px;
+    padding: 0px 14px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(237, 237, 237);
+}
+
+.submit-button {
+    font-size: 17px;
+    font-weight: 500px;
+    padding: 12px 24px;
+    margin: 48px 0px 12px 0px;
+    background-color: #3D704C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.15;
+}
+.submit-button:hover {
+    opacity: 0.9;
+}
+.submit-button:active {
+    opacity: 0.8;
 }
