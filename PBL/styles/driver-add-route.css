@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto, Arial;
+    margin: 0;
+}
+
+.outer-div {
+    display: grid;
+    place-items: center;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    top: 0; right: 0; left: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background-color: #3D704C;
+    color: white;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+}
+.right-section .image-container {
+    width: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.general-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 64px 128px;
+    margin: 0px 64px;
+}
+.general-grid .detail {
+    display: flex;
+    flex-direction: column;
+}
+.detail .detail-heading {
+    font-size: 62px; 
+    font-weight: 700;
+    text-align: left;
+    line-height: 72px;
+    margin-bottom: 32px;
+}
+.detail .sub-heading {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(88, 88, 88)
+}
+
+.detail .location-input-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    padding: 0 56px 0 0;
+}
+.location-input-container .origin-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 12px;
+    height: 47.2px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(249, 249, 249);
+}
+.origin-container .origin-input {
+    height: 93%;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0 12px;
+    font-size: 17px;
+    background-color: rgb(249, 249, 249);
+}
+
+.location-input-container .mid-stop {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px 28px;
+    padding: 0 0 0 12px;
+    height: 47.2px;
+    width: 92.5%;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(249, 249, 249);
+}
+.mid-stop .mid-stop-input {
+    height: 93%;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0 12px;
+    font-size: 17px;
+    background-color: rgb(249, 249, 249);
+}
+
+.location-input-container .destination-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0 0 0 12px;
+    height: 47.2px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(249, 249, 249);
+}
+.destination-container .destination-input {
+    height: 93%;
+    width: 100%;
+    margin: 0 12px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: rgb(249, 249, 249);
+}
+.detail .add-route-button {
+    margin: 48px 0px 0px 0px;
+}
+
+.general-button {
+    padding: 14px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #3D704C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.general-button:hover {
+    opacity: 0.9;
+}
+.general-button:active {
+    opacity: 0.8;
+}
+
+.general-grid .image {
+    display: flex;
+    align-items: center;
+}
