@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    margin-bottom: 500px;
+}
+
 .header {
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -15,6 +19,7 @@
     height: 64px;
     background-color: #3D704C;
     color: white;
+    z-index: 100;
 }
 .header .left-section {
     display: flex;
@@ -52,11 +57,11 @@
     text-align: left;
     color: white;
 }
-    .detail-section .heading {
+    .heading {
         font-size: 42px;
         font-weight: 500;
     }
-    .detail-section .sub-heading {
+    .sub-heading {
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 8px;
@@ -86,8 +91,9 @@
 }
     .image-section .car-image {
         position: absolute;
-        right: -10px;
-        width: 750px;
+        right: -15px;
+        height: 400px;
+        width: 700px;
         border-radius: 24px;
         border: 2px dashed #3e7f52;
     }
@@ -96,23 +102,81 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
-    padding: 64px;
-    border: 1px solid #3e7f52;
+    width: 100%;
+    border: 2px dashed #3D704C;
+    border-radius: 24px;
 }
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    border: 1px solid black;
+    width: 100%;
+    column-gap: 48px;
 }
 .stats-grid .stat {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     column-gap: 120px;
-    border: 1px solid black;
+    width: 100%;
+    margin: 32px 0px 0px 0px;
 }
-    .stat .total-km {
-        font-size: 16px;
+    .stat-name,
+    .profile-stat-name {
+        font-size: 24px;
+        font-weight: 500;
     }
+    .stat-value,
+    .profile-stat-value {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+
+
+
+.drive-stats {
+    display: flex;
+    flex-direction: column;
+}
+.drive-stats-text {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 50px 0px;
+    border: 2px solid #3e7f52;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+.driver-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    padding: 48px 0px;
+    border-radius: 24px;
+    background-color: #3D704C;
+}
+.driver-profilepic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0px 0px 8px 0px;
+}
+.driver-profilepic {
+    width: 95%;    
+    border-radius: 50%;
+}
+.profile-stat-name {
+    font-size: 24px;
+    color: white;
+}
+.profile-stat-value {
+    color: white;
+}
