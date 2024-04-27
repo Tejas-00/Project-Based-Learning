@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="right-section">
-                <div class="profile-pic-container">
+                <div class="profile-pic-container" id="pp" onclick="rand()">
                     <img class="profile-pic" src="images/blank-profile-picture.png">
                 </div>
             </div>
@@ -96,9 +96,11 @@
                     Make money by renting out your car, Connect with thousands of drivers and earn more per week with UrbanLink.
                 </div>
                 <div style="margin-top: 80px;">
-                    <button class="general-button">
-                        Let's go
-                    </button>
+                    <form action="rental-car-detail.html">
+                        <button class="general-button" type="submit">
+                            Let's go
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -162,5 +164,7 @@
                 
             </div>
         </div>
+
+        <script src="scripts/home-page.js"></script>
     </body>
 </html>

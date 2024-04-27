@@ -44,25 +44,25 @@
                 </div>
                 <div class="sub-heading">
                     Requet. wait. ride
-                </div>       
-                <div class="location-input-container">
-                    <div class="origin-container">
-                        <img src="images/my_location_FILL0_wght400_GRAD0_opsz24.png">
-                        <input class="origin-input" type="text" placeholder="Enter location">
-                        <img src="" alt="">
-                    </div>
-                    <div class="destination-container">
-                        <img src="images/location_on_FILL0_wght400_GRAD0_opsz24.png">
-                        <input class="destination-input" type="text" placeholder="Enter destination">
-                    </div>
                 </div>
-                <div style="margin-top: 40px;">
-                    <a href="sign_up.html">
-                        <button class="general-button">
+                <form action="sign_up.html">
+                    <div class="location-input-container">
+                        <div class="origin-container">
+                            <img src="images/my_location_FILL0_wght400_GRAD0_opsz24.png">
+                            <input class="origin-input" type="text" placeholder="Enter location" required>
+                            <img src="" alt="">
+                        </div>
+                        <div class="destination-container">
+                            <img src="images/location_on_FILL0_wght400_GRAD0_opsz24.png">
+                            <input class="destination-input" type="text" placeholder="Enter destination" required>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <button class="general-button" type="submit">
                             See prices
                         </button>
-                    </a>
-                </div>
+                    </div>
+                </form>
             </div>
 
             <div class="image-section">
@@ -203,5 +203,7 @@
                 
             </div>
         </div>
+
+        <script src="scripts/index.js"></script>
     </body>
 </html>

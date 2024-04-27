@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto, Arial;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 64px;
+    background-color: #3D704C;
+    color: white;
+}
+.header .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 0px 50px;
+}
+.left-section .logo {
+    font-size: 28px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.outer-div {
+    display: grid;
+    place-items: center;
+    padding: 0px 64px;
+    margin: 64px 0px 0px 0px;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #226035;
+    width: 90%;
+    padding: 0px 48px;
+    margin-top: 200px;
+    border-radius: 45px;
+    height: 320px;
+}
+.intro-grid .detail-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}
+    .detail-section .heading {
+        font-size: 42px;
+        font-weight: 500;
+    }
+    .detail-section .sub-heading {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    .detail-section .invite {
+        margin: 70px 0 0 0;
+    }
+    .invite-button {
+        padding: 10px 25px;
+        font-size: 17px;
+        font-weight: 500;
+        background-color: white;
+        color: #3e7f52;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.15s;
+    }
+    .invite-button:hover{
+        background-color: rgb(228, 228, 228);
+    }
+
+.intro-grid .image-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+    .image-section .car-image {
+        position: absolute;
+        right: -10px;
+        width: 750px;
+        border-radius: 24px;
+        border: 2px dashed #3e7f52;
+    }
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    padding: 64px;
+    border: 1px solid #3e7f52;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 1px solid black;
+}
+.stats-grid .stat {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+    border: 1px solid black;
+}
+    .stat .total-km {
+        font-size: 16px;
+    }
