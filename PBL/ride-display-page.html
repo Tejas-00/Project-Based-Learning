@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ride display</title>
+
+    <link rel="stylesheet" href="styles/ride-display-page.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="logo">
+                UrbanLink
+            </div>
+        </div>
+        <div class="right-section"></div>
+    </div>
+
+    <div class="outer-div">
+        <div class="ride-route">
+            <div class="origin">
+                Nashik
+            </div>
+            <img src="images/right-arrow.png" class="direction-arrow">
+            <div class="destination">
+                Dhule
+            </div>
+        </div>
+
+        <div class="tip">
+            <div class="no. of taxis">
+                <strong>23</strong> <br>taxis
+            </div>
+            <div>
+                Departure
+            </div>
+            <div>
+                Duration
+            </div>
+            <div>
+                Arrival
+            </div>
+            <div>
+                Fare
+            </div>
+        </div>
+
+        <div class="ride-container" id="ride-container">
+            <div class="ride-details">
+                <div class="taxi-icon">
+                    <img src="images/taxi-cab-icon.png" style="width: 80%;">
+                </div>
+                <div class="departure-time">
+                    11:00
+                    <br><br><br>
+                    <div class="departure-point">
+                        Nashik
+                    </div>
+                </div>
+                <div class="duration">
+                    2hr 40min
+                </div>
+                <div class="arrival-time">
+                    13:40
+                    <br><br><br>
+                    <div class="arrival-point">
+                        Dhule
+                    </div>
+                </div>
+                <div class="fare">
+                    ₹ 700
+                </div>
+                <button class="book-button" id="bookButton" onclick="bookRedirect('user-info.html')">
+                    Book
+                </button>
+            </div>
+            <div class="ride-details">
+                <div class="taxi-icon">
+                    <img src="images/taxi-cab-icon.png" style="width: 80%;">
+                </div>
+                <div class="departure-time">
+                    11:00
+                    <br><br><br>
+                    <div class="departure-point">
+                        Nashik
+                    </div>
+                </div>
+                <div class="duration">
+                    2hr 40min
+                </div>
+                <div class="arrival-time">
+                    13:40
+                    <br><br><br>
+                    <div class="arrival-point">
+                        Dhule
+                    </div>
+                </div>
+                <div class="fare">
+                    ₹ 700
+                </div>
+                <button class="book-button" id="bookButton" onclick="bookRedirect('user-info.html')">
+                    Book
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/display-ride.js"></script>
+</body>
+</html>
