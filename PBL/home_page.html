@@ -37,22 +37,25 @@
                 </div>
                 <div class="sub-heading">
                     Requet. wait. ride
-                </div>       
-                <div class="location-input-container">
-                    <div class="origin-container">
-                        <img src="images/my_location_FILL0_wght400_GRAD0_opsz24.png">
-                        <input class="origin-input" type="text" placeholder="Enter location">
+                </div> 
+                <form action="ride-display-page.html">
+                    <div class="location-input-container">
+                        <div class="origin-container">
+                            <img src="images/my_location_FILL0_wght400_GRAD0_opsz24.png">
+                            <input class="origin-input" type="text" placeholder="Enter location" id="origin" oninput="storeInput()" required>
+                        </div>
+                        <div class="destination-container">
+                            <img src="images/location_on_FILL0_wght400_GRAD0_opsz24.png">
+                            <input class="destination-input" type="text" placeholder="Enter destination" id="destination" oninput="storeInput()" required>
+                        </div>
                     </div>
-                    <div class="destination-container">
-                        <img src="images/location_on_FILL0_wght400_GRAD0_opsz24.png">
-                        <input class="destination-input" type="text" placeholder="Enter destination">
+                    <div style="margin-top: 40px;">
+                        <button class="general-button" onclick="redirectTo('ride-display-page.html')" type="submit">
+                            See prices
+                        </button>
                     </div>
-                </div>
-                <div style="margin-top: 40px;">
-                    <button class="general-button">
-                        See prices
-                    </button>
-                </div>
+                </form>      
+                
             </div>
 
             <div class="image-section">
